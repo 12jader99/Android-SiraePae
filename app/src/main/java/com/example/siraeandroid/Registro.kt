@@ -1,6 +1,7 @@
 package com.example.siraeandroid
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,6 +25,11 @@ class Registro : AppCompatActivity() {
             val cedula = binding.etCedula.text.toString().trim()
             val correo = binding.etCorreo.text.toString().trim()
             val password = binding.etContrasena.text.toString().trim()
+
+            if (nombre.isEmpty() || cedula.isEmpty() || correo.isEmpty() || password.isEmpty()) {
+
+                Toast.makeText(this,"Que complete todos los campos", Toast.LENGTH_SHORT).show()
+            }
 
 
             }
