@@ -1,5 +1,6 @@
 package com.example.siraeandroid
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -35,6 +36,14 @@ class Registro : AppCompatActivity() {
                     Toast.makeText(this, "Usuario registrado", Toast.LENGTH_SHORT).show()
 
             }
+        }
+
+
+        binding.txtVolver.setOnClickListener {
+
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+
         }
 
 
