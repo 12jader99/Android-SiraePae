@@ -6,16 +6,33 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.siraeandroid.databinding.ActivityMainBinding
+import com.example.siraeandroid.databinding.ActivityRegistroBinding
 
 class Registro : AppCompatActivity() {
 
-    private lateinit var  binding: ActivityMainBinding
+    private lateinit var  binding: ActivityRegistroBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityRegistroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-    }
+        binding.btnRegistrar.setOnClickListener {
+
+            val nombre = binding.etNombre.text.toString().trim()
+            val cedula = binding.etCedula.text.toString().trim()
+            val correo = binding.etCorreo.text.toString().trim()
+            val password = binding.etContrasena.text.toString().trim()
+
+
+            }
+
+
+
+
+
+
+
+        }
 }
