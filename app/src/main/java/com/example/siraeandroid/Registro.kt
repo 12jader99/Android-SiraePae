@@ -28,17 +28,27 @@ class Registro : AppCompatActivity() {
 
             if (nombre.isEmpty() || cedula.isEmpty() || correo.isEmpty() || password.isEmpty()) {
 
-                Toast.makeText(this,"Que complete todos los campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Que complete todos los campos", Toast.LENGTH_SHORT).show()
+
+            } else {
+
+                    Toast.makeText(this, "Usuario registrado", Toast.LENGTH_SHORT).show()
+
             }
-
-
-            }
-
-
-
-
-
-
-
         }
+
+
+
+    }
+
+
+
 }
+
+
+
+
+
+
+
+
