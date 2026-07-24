@@ -12,7 +12,7 @@ import com.example.siraeandroid.databinding.ActivityRegistroBinding
 
 class Registro : AppCompatActivity() {
 
-    private lateinit var binding: ActivityRegistroBinding
+    private lateinit var  binding: ActivityRegistroBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,9 +20,14 @@ class Registro : AppCompatActivity() {
         binding = ActivityRegistroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        }
+
+
+
     }
 
-}
+
 
 
 
