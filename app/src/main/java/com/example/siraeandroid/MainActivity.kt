@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        binding.txtVolver.setOnClickListener {
+        binding.btnirIogin.setOnClickListener {
 
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
