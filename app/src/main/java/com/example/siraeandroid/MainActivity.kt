@@ -3,13 +3,8 @@ package com.example.siraeandroid
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.siraeandroid.databinding.ActivityMainBinding
-import com.example.siraeandroid.databinding.ActivityRegistroBinding
-import kotlin.toString
 
 class MainActivity : AppCompatActivity() {
 
@@ -44,17 +39,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnirIogin.setOnClickListener {
 
-            val intent = Intent(this, Login::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
 
         }
 
-
-
     }
 
-
-
 }
-
-
